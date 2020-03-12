@@ -5,9 +5,10 @@ $(document).ready(function(){
 var myChores = localStorage.getItem('chores')
  var myInd = localStorage.getItem('ind');
  //splitting the long strings from local storage into arrays of indiv chores and textarea input numbers.
+ if (splitInd !== null) {
   var splitInd = myInd.split(",")
   var splitChores = myChores.split(",")
-
+}
 //linking chores to corresponding text areas.
 var finalNum;
   for (var i = 0; i < splitInd.length; i++) {
